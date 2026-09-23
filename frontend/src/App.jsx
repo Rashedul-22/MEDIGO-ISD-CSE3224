@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./View/Home/HomePage";
 import ConsultationPage from "./View/Consultation/ConsultationPage";
-import HomeDiagnosticPage from "./View/HomeDiagnostic/HomeDiagnosticPage";
+import PharmacyPage from "./View/Pharmacy/PharmacyPage";
 import HealthPlanPage from "./View/HealthPlan/HealthPlanPage";
 
 import AdminLoginPage from "./View/Login/AdminLoginPage";
@@ -23,6 +23,10 @@ import DoctorDashboard from "./View/Doctor/DoctorDashboard";
 import DoctorAppointment from "./View/Doctor/DoctorAppointment";
 import DoctorSettings from "./View/Doctor/DoctorSettings";
 import PatientSettings from "./View/Patient/PatientSetting";
+import AdminReports from "./View/Admin/AdminReports";
+import AdminMedicine from "./View/Admin/AdminMedicine";
+import PatientAccount from "./View/Patient/PatientAccount";
+import MedicineOrderFeature from "./View/Admin/MedicineOrderFeature";
 
 function App() {
   return (
@@ -32,7 +36,7 @@ function App() {
 
         <Route path="/consultation" element={<ConsultationPage />} />
         <Route path="/health-plan" element={<HealthPlanPage />} />
-        <Route path="/home-diagnostic" element={<HomeDiagnosticPage />} />
+        <Route path="/pharmacy" element={<PharmacyPage />}/>
         <Route path="/Dept/:speciality" element={<DepartmentPage />} />
         <Route path="/doctor/:doctorSlug" element={<DoctorDetails />} />
 
@@ -56,6 +60,11 @@ function App() {
         <Route path="/admin-doctors" element={<AdminDoctors />} />
         <Route path="/admin-patients" element={<AdminPatients />} />
         <Route path="/admin-appointments" element={<AdminAppointmetns />} />
+        <Route path="/admin-reports" element={<AdminReports />}/>
+        <Route path="/admin-medicines" element={<AdminMedicine />}/>
+        <Route path="/admin-medicine-orders" element={<MedicineOrderFeature />}/>
+
+        <Route path="/patient-account" element={<PatientAccount />}/>
         
       </Routes>
     </BrowserRouter>
