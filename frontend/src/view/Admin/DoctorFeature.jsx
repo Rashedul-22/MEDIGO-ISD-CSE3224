@@ -78,7 +78,7 @@ function DoctorFeature() {
 
     axios
       .get(
-        "http://localhost:5167/api/admin/doctors/requests"
+        "http://localhost:5138/api/admin/doctors/requests"
       )
 
       .then((res) => {
@@ -129,7 +129,7 @@ function DoctorFeature() {
 
     axios
       .post(
-        `http://localhost:5167/api/admin/doctors/requests/${id}/approve`
+        `http://localhost:5138/api/admin/doctors/requests/${id}/approve`
       )
 
       .then((res) => {
@@ -185,7 +185,7 @@ function DoctorFeature() {
 
     axios
       .delete(
-        `http://localhost:5167/api/admin/doctors/requests/${id}/reject`
+        `http://localhost:5138/api/admin/doctors/requests/${id}/reject`
       )
 
       .then((res) => {
@@ -240,7 +240,7 @@ function DoctorFeature() {
 
     axios
       .get(
-        `http://localhost:5167/api/admin/doctors/requests/${id}`
+        `http://localhost:5138/api/admin/doctors/requests/${id}`
       )
 
       .then((res) => {
