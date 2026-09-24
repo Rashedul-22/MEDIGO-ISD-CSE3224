@@ -30,7 +30,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 
-const API_URL = "http://localhost:5167";
+const API_URL = "http://localhost:5138";
 
 
 function DoctorSettings() {
